@@ -15,7 +15,7 @@ int main(void)
         return 1;
     }
 
-    muestras_pendientes = muestras_iniciales - muestras_recibidas - muestras_procesadas;
+    muestras_pendientes = muestras_iniciales + muestras_recibidas - muestras_procesadas;
 
     printf("Muestras pendientes: %d\n", muestras_pendientes);
     return 0;
